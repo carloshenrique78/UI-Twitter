@@ -10,12 +10,12 @@ import './Timeline.css'
   um valor exclusivo que existe em cada parametro
   */
 
-export function Timeline(){
+export function Timeline(){ 
     const [newTweet, setNewTweet] = useState('')
     const [tweets, setTweets] = useState([
-        'Primeiro Tweet',
-        "Estou aprendendo!",
-        "Terceiro Tweet"
+        'Bem vindo a cópia barata do Design do Tweet', //Aqui cada constante do vetor vira um tweet
+        "No momento pouca coisa aqui tem funcionalidade, você pode digitar um Tweet e postar e ele já aparecerá aqui na timeline, você também pode clicar em um tweet e ver os comentários",
+        
     ])
     function createNewTweet(event: FormEvent){
         event.preventDefault()
@@ -33,7 +33,7 @@ usamos "...tweets" para pegar os Tweets antigos também
           
           <form onSubmit={createNewTweet} className='new-tweet-form'>
             <label htmlFor="tweet">
-              <img src="https://github.com/diego3g.png" alt="Diego" />
+              <img src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258193-stock-illustration-anonymous-business-man-icon.jpg" alt="Anonimo" />
               <textarea id="tweet" 
               placeholder='O que está acontecendo?'
               onChange={(event) => {

@@ -9,10 +9,10 @@ interface TweetProps{
 export function Tweet(props: TweetProps){
     return(
         <Link to='/status' className='tweet'>
-            <img src="" alt="Diego" />
+            <img src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258193-stock-illustration-anonymous-business-man-icon.jpg" alt="Anonimo" />
             <div className="tweet-content">
-                <strong>Diego</strong>
-                <span className='hashtag'>@diegosf</span>
+                <strong>Anonimo</strong>
+                <span className='hashtag'>@UsuarioAnonimo</span>
             </div>
             <p>
                 {props.content}
